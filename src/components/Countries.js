@@ -16,15 +16,15 @@ const Countries = () => {
   return (
     <div>
       <p>isLoading...</p>
-      <ul>
+      <div>
         {AllHolidays.map((Holiday) => (
-          <li key={Holiday.countryCode}>
+          <div key={Holiday.countryCode}>
             <NavLink to="/CountryDetails" id={Holiday.countryCode} onClick={handleDetailsFetch}>
               {Holiday.name}
             </NavLink>
-          </li>
+          </div>
         ))}
-      </ul>
+      </div>
     </div>
   );
 };
