@@ -2,7 +2,7 @@ import { createAsyncThunk, createSlice } from '@reduxjs/toolkit';
 import axios from 'axios';
 
 const initialState = {
-  Holidays: [],
+  AllHolidays: [],
   isLoading: false,
 };
 
@@ -28,7 +28,7 @@ const HolidaySlice = createSlice({
       })
       .addCase(HolidayFetcher.fulfilled, (state, action) => {
         state.isLoading = false;
-        state.Holidays = action.payload;
+        state.AllHolidays = action.payload;
         // console.log(action.payload);
       })
       .addCase(HolidayFetcher.rejected, (state) => {
