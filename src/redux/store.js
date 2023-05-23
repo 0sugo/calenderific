@@ -1,6 +1,10 @@
-const { configureStore } = require('@reduxjs/toolkit');
+import { configureStore } from '@reduxjs/toolkit';
+import HolidayReducer from './Holiday/HolidaySlice';
 
 const store = configureStore({
-  reducer: {},
+  reducer: {
+    allHolidays: HolidayReducer,
+
+  },
 });
 export default store;
