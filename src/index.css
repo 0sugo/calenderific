@@ -16,33 +16,70 @@ code {
     'Courier New',
     monospace;
 }
+
 /* countries */
 .individual-countries {
   display: grid;
   grid-template-columns: repeat(3, 1fr);
 }
+@media only screen and (max-width: 900px) {
+  .individual-countries  {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+
 .one-country {
-  border: 1px solid red;
   aspect-ratio: 1/1;
   background: #4167af;
   display: flex;
   flex-direction: column;
-  /* align-items: flex-end; */
-  /* justify-content: flex-end; */
-
+  justify-content: space-between;
+  padding-right: 15px;
 }
+
 .initials {
   align-self: center;
+  font-size: 10vw;
+  color: #2d4573;
+  margin: 0;
+  padding: 0;
 }
+
 .nav-to {
   align-self: flex-end;
+  margin: 0;
+  padding: 0;
+  color: #f0f5fe;
+  font-size: 3vw;
+  text-transform: uppercase;
+  text-decoration: none;
 }
+
+.holiday-counter {
+  align-self: flex-end;
+  margin: 0;
+  padding: 0;
+  color: #f0f5fe;
+  font-size: 15px;
+}
+
+.holidays-count {
+  font-size: 15px;
+  margin: 0;
+  padding: 0;
+  text-align: right;
+  vertical-align: text-top;
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+}
+
 .righter {
   width: 50px;
   align-self: flex-end;
-  color: #fff;
+  color: #f0f5fe;
 }
-.one-country:nth-child(odd){
+
+.one-country:nth-child(odd) {
   background-color: #3e61a4;
-  
 }
