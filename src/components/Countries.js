@@ -29,7 +29,10 @@ const Countries = () => {
                 <div className="initials">{Holiday.countryCode}</div>
                 <NavLink to="/CountryDetails" id={Holiday.countryCode} className="nav-to" onClick={handleDetailsFetch}>
                   {Holiday.name}
+                  <br />
+                  <span className="holidays-count">2 + Holidays</span>
                 </NavLink>
+                <div className="holiday-counter" />
               </div>
             ))}
           </div>
