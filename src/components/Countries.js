@@ -1,6 +1,7 @@
 import { useDispatch, useSelector } from 'react-redux';
 import { NavLink } from 'react-router-dom';
 import { fetchCountryDetails } from '../redux/InfoCountry/InfoCountrySlice';
+import { RightIcon } from './Icons';
 
 const Countries = () => {
   const { AllHolidays } = useSelector((store) => store.allHolidays);
@@ -15,16 +16,24 @@ const Countries = () => {
   };
   return (
     <div>
-      <p>isLoading...</p>
       <div>
-        {AllHolidays.map((Holiday) => (
-          <div key={Holiday.countryCode}>
-            <NavLink to="/CountryDetails" id={Holiday.countryCode} onClick={handleDetailsFetch}>
-              {Holiday.name}
-            </NavLink>
-          </div>
-        ))}
+        <h1>World Holidays</h1>
       </div>
+      {(AllHolidays.isLoading) ? <p>Loading...</p>
+
+        : (
+          <div className="individual-countries">
+            {AllHolidays.map((Holiday) => (
+              <div key={Holiday.countryCode} className="one-country">
+                <RightIcon />
+                <div className="initials">{Holiday.countryCode}</div>
+                <NavLink to="/CountryDetails" id={Holiday.countryCode} className="nav-to" onClick={handleDetailsFetch}>
+                  {Holiday.name}
+                </NavLink>
+              </div>
+            ))}
+          </div>
+        )}
     </div>
   );
 };
