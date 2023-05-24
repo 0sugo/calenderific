@@ -18,12 +18,33 @@ code {
 }
 
 /* Navbar */
-.nav-bar {
-  display: flex;
+.nav-container {
+  text-align: center;
+  background: #2d4573;
+  padding: 5px;
 }
 
 .leftchev {
   width: 50px;
+}
+
+.back {
+  text-decoration: none;
+  color: white;
+  position: fixed;
+  left: 10px;
+  top: 20px;
+}
+
+.topper {
+  font-weight: 400;
+  color: #f0f5fe;
+}
+
+/* global-photo */
+.header-photo {
+  width: 70%;
+  margin: 10px 15px;
 }
 
 /* countries */
@@ -63,6 +84,35 @@ code {
   font-size: 3vw;
   text-transform: uppercase;
   text-decoration: none;
+}
+
+/* search */
+.search-container {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  background-color: #35548b;
+  padding-top: 15px;
+  padding-bottom: 20px;
+}
+
+.search-Title {
+  color: #f0f5fe;
+  text-transform: uppercase;
+  font-weight: 600;
+}
+
+.search-Input-Area {
+  width: 50%;
+  height: 35px;
+  padding-left: 15px;
+  border-radius: 8px;
+  -webkit-border-radius: 8px;
+  -moz-border-radius: 8px;
+  -ms-border-radius: 8px;
+  -o-border-radius: 8px;
 }
 
 .holiday-counter {
