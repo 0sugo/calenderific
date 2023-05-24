@@ -16,14 +16,18 @@ code {
     'Courier New',
     monospace;
 }
-
+/* Navbar */
+.leftchev {
+  width: 50px;
+}
 /* countries */
 .individual-countries {
   display: grid;
   grid-template-columns: repeat(3, 1fr);
 }
+
 @media only screen and (max-width: 900px) {
-  .individual-countries  {
+  .individual-countries {
     grid-template-columns: repeat(2, 1fr);
   }
 }
