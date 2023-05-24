@@ -16,10 +16,12 @@ code {
     'Courier New',
     monospace;
 }
+
 /* Navbar */
 .leftchev {
   width: 50px;
 }
+
 /* countries */
 .individual-countries {
   display: grid;
