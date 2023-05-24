@@ -40,13 +40,35 @@ code {
   font-weight: 400;
   color: #f0f5fe;
 }
-
+.hero-section {
+  display: flex;
+  align-items: center;
+}
 /* global-photo */
 .header-photo {
   width: 70%;
   margin: 10px 15px;
 }
+.All-holidays {
+  color: #f0f5fe;
+  width: 50%;
+}
 
+.before-text  {
+  color: #f0f5fe;
+  font-size: 30px;
+  font-weight: 800;
+  text-transform: uppercase;
+  line-height: 18px;
+}
+.main-text {
+  letter-spacing: 0.03em;
+}
+.after-text {
+  font-size: 20px;
+  text-transform: lowercase;
+  font-weight: 300;
+}
 /* countries */
 .individual-countries {
   display: grid;
