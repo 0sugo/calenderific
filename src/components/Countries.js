@@ -6,19 +6,20 @@ import Navbar from './Navbar';
 
 const Countries = () => {
   const { AllHolidays } = useSelector((store) => store.allHolidays);
-
   const dispatch = useDispatch();
-  // console.log(AllHolidays[0]);
   const handleDetailsFetch = (e) => {
     const { id } = e.target;
     const url = `https://date.nager.at/api/v3/publicholidays/2023/${id}`;
-    // console.log(url);
     dispatch(fetchCountryDetails({ url }));
   };
   return (
     <div>
       <div>
         <Navbar />
+      </div>
+      <div className="search-container">
+        <p className="search-Title">Search For Country</p>
+        <input className="search-Input-Area" placeholder="e.g. Andorra" />
       </div>
       {(AllHolidays.isLoading) ? <p>Loading...</p>
 
