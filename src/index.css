@@ -18,6 +18,10 @@ code {
 }
 
 /* Navbar */
+.nav-bar {
+  display: flex;
+}
+
 .leftchev {
   width: 50px;
 }
