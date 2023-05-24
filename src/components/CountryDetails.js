@@ -7,7 +7,7 @@ const CountryDetails = () => {
   // console.log(country);
   return (
     <div>
-      <Navbar to="/" />
+      <Navbar />
       <div>
         {country.map((item) => (<div key={item.date}>{item.name}</div>))}
       </div>
