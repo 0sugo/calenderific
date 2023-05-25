@@ -40,35 +40,41 @@ code {
   font-weight: 400;
   color: #f0f5fe;
 }
+
 .hero-section {
   display: flex;
   align-items: center;
 }
+
 /* global-photo */
 .header-photo {
   width: 70%;
   margin: 10px 15px;
 }
+
 .All-holidays {
   color: #f0f5fe;
   width: 50%;
 }
 
-.before-text  {
+.before-text {
   color: #f0f5fe;
   font-size: 30px;
   font-weight: 800;
   text-transform: uppercase;
   line-height: 18px;
 }
+
 .main-text {
   letter-spacing: 0.03em;
 }
+
 .after-text {
   font-size: 20px;
   text-transform: lowercase;
   font-weight: 300;
 }
+
 /* countries */
 .individual-countries {
   display: grid;
@@ -164,4 +170,23 @@ code {
 
 .one-country:nth-child(odd) {
   background-color: #3e61a4;
+}
+
+/* CountryDetails */
+.chosen-holidays {
+  display: flex;
+  color: #f0f5fe;
+  justify-content: space-between;
+  font-size: 25px;
+  font-weight: 500;
+  padding: 25px;
+}
+
+.chosen-holidays:nth-child(odd) {
+  background: #2d4573;
+  padding: 25px;
+}
+
+.dater {
+  margin-right: 15%;
 }
