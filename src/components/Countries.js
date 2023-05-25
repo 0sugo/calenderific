@@ -4,6 +4,7 @@ import { useState } from 'react';
 import { fetchCountryDetails } from '../redux/InfoCountry/InfoCountrySlice';
 import { RightIcon } from './Icons';
 import Navbar from './Navbar';
+import globalphoto from './assets/globalphoto.png';
 
 const Countries = () => {
   const { AllHolidays } = useSelector((store) => store.allHolidays);
@@ -25,6 +26,19 @@ const Countries = () => {
     <div>
       <div>
         <Navbar />
+        <div className="hero-section">
+          <img className="header-photo" src={globalphoto} alt="world" />
+          <div className="All-holidays">
+            <h3>
+              <span className="before-text">Sampled</span>
+              <br />
+              {' '}
+              <span className="main-text">{AllHolidays.length}</span>
+              {' '}
+              <span className="after-text">Countries</span>
+            </h3>
+          </div>
+        </div>
       </div>
       <div className="search-container">
         <p className="search-Title">Search For Country</p>
