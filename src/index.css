@@ -52,6 +52,13 @@ code {
   margin: 10px 15px;
 }
 
+.Banner {
+  text-align: center;
+  background:#2d4573;
+  color: #f0f5fe;
+  padding: 10px;
+}
+
 .All-holidays {
   color: #f0f5fe;
   width: 50%;
@@ -94,6 +101,11 @@ code {
   flex-direction: column;
   justify-content: space-between;
   padding-right: 15px;
+}
+
+.one-country:hover {
+  box-shadow: 0 0 282px 10px rgba(0, 0, 0, 0.33) inset;
+
 }
 
 .initials {
