@@ -10,18 +10,20 @@ const Countries = () => {
   const { AllHolidays } = useSelector((store) => store.allHolidays);
   const dispatch = useDispatch();
   const [search, setSearch] = useState('');
-  const handleDetailsFetch = (id) => {
-    console.log(id);
-    const url = `https://date.nager.at/api/v3/publicholidays/2023/${id}`;
-    dispatch(fetchCountryDetails({ url }));
+  const handleDetailsFetch = (selectedId) => {
+    if (selectedId) {
+      const url = `https://date.nager.at/api/v3/publicholidays/2023/${selectedId}`;
+      console.log(url);
+      dispatch(fetchCountryDetails({ url }));
+    }
   };
+
   const handleSearch = (e) => {
     setSearch(e.target.value);
   };
   const filteredHoliday = AllHolidays.filter((item) => (
     item.name.toLowerCase().includes(search.toLowerCase())
   ));
-
   return (
     <div>
       <div>
@@ -49,7 +51,7 @@ const Countries = () => {
         : (
           <div className="individual-countries">
             {filteredHoliday.map((Holiday) => (
-              <NavLink key={Holiday.countryCode} className="one-country" to="/CountryDetails" id={Holiday.countryCode} onClick={(e) => handleDetailsFetch(e.target.id)}>
+              <NavLink key={Holiday.countryCode} className="one-country" to="/CountryDetails" id={Holiday.countryCode} onClick={() => handleDetailsFetch(Holiday.countryCode)}>
                 <RightIcon />
                 <div className="initials">{Holiday.countryCode}</div>
                 <p className="nav-to">
