@@ -10,8 +10,8 @@ const Countries = () => {
   const { AllHolidays } = useSelector((store) => store.allHolidays);
   const dispatch = useDispatch();
   const [search, setSearch] = useState('');
-  const handleDetailsFetch = (e) => {
-    const { id } = e.target;
+  const handleDetailsFetch = (id) => {
+    console.log(id);
     const url = `https://date.nager.at/api/v3/publicholidays/2023/${id}`;
     dispatch(fetchCountryDetails({ url }));
   };
@@ -49,16 +49,16 @@ const Countries = () => {
         : (
           <div className="individual-countries">
             {filteredHoliday.map((Holiday) => (
-              <div key={Holiday.countryCode} className="one-country">
+              <NavLink key={Holiday.countryCode} className="one-country" to="/CountryDetails" id={Holiday.countryCode} onClick={(e) => handleDetailsFetch(e.target.id)}>
                 <RightIcon />
                 <div className="initials">{Holiday.countryCode}</div>
-                <NavLink to="/CountryDetails" id={Holiday.countryCode} className="nav-to" onClick={handleDetailsFetch}>
+                <p className="nav-to">
                   {Holiday.name}
                   <br />
                   <span className="holidays-count">2 + Holidays</span>
-                </NavLink>
+                </p>
                 <div className="holiday-counter" />
-              </div>
+              </NavLink>
             ))}
           </div>
         )}
