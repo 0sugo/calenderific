@@ -7,7 +7,7 @@ test('renders the Navbar component correctly', () => {
   const { container } = render(
     <Router>
       <Navbar />
-    </Router>
+    </Router>,
   );
 
   expect(container).toMatchSnapshot();

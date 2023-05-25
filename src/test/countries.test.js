@@ -28,10 +28,12 @@ test('renders the Countries component correctly', () => {
 
   const { container } = render(
     <Provider store={store}>
-      <Router> {/* Wrap the component with the Router */}
+      <Router>
+        {' '}
+        {/* Wrap the component with the Router */}
         <Countries />
       </Router>
-    </Provider>
+    </Provider>,
   );
 
   expect(container).toMatchSnapshot();
@@ -49,10 +51,12 @@ test('renders the loading state correctly', () => {
 
   const { container } = render(
     <Provider store={store}>
-      <Router> {/* Wrap the component with the Router */}
+      <Router>
+        {' '}
+        {/* Wrap the component with the Router */}
         <Countries />
       </Router>
-    </Provider>
+    </Provider>,
   );
 
   expect(container).toMatchSnapshot();

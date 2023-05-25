@@ -41,10 +41,12 @@ test('renders the CountryDetails component correctly', () => {
 
   const { container } = render(
     <Provider store={store}>
-      <MemoryRouter> {/* Wrap the component with the MemoryRouter */}
+      <MemoryRouter>
+        {' '}
+        {/* Wrap the component with the MemoryRouter */}
         <CountryDetails />
       </MemoryRouter>
-    </Provider>
+    </Provider>,
   );
 
   expect(container).toMatchSnapshot();
