@@ -7,11 +7,9 @@ const CountryDetails = () => {
   const { country } = useSelector((store) => store.countryDetails);
   const { AllHolidays } = useSelector((store) => store.allHolidays);
   let filteredCountry = [];
-  let mainText = '0';
   if (country && country.length > 0) {
     const id = country[0].countryCode;
     filteredCountry = AllHolidays.filter((item) => item.countryCode === id);
-    mainText = filteredCountry.length.toString();
   }
   return (
     <div>
@@ -22,13 +20,19 @@ const CountryDetails = () => {
           <h3>
             <span className="before-text">{filteredCountry.length > 0 ? filteredCountry[0].name : ''}</span>
             <br />
-            <span className="main-text">{mainText}</span>
+            <span className="main-text">{country.length}</span>
             {' '}
             <span className="after-text">Holidays</span>
           </h3>
         </div>
       </div>
       <div className="chosen-container">
+        <h3 className="Banner">
+          HOLIDAYS IN
+          {' '}
+          {filteredCountry.length > 0 ? filteredCountry[0].name.toUpperCase() : ''}
+          {' - 2023'}
+        </h3>
         {country.map((item) => (
           <div className="chosen-holidays" key={item.date}>
             <p>{item.name}</p>
