@@ -8,8 +8,13 @@ const CountryDetails = () => {
   return (
     <div>
       <Navbar />
-      <div>
-        {country.map((item) => (<div key={item.date}>{item.name}</div>))}
+      <div className="chosen-container">
+        {country.map((item) => (
+          <div className="chosen-holidays" key={item.date}>
+            <p>{item.name}</p>
+            <p className="dater">{item.date}</p>
+          </div>
+        ))}
       </div>
     </div>
   );
