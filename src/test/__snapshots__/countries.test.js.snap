@@ -1,0 +1,256 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`renders the Countries component correctly 1`] = `
+<div>
+   
+  <div>
+    <div>
+      <div
+        class="nav-container"
+      >
+        <a
+          aria-current="page"
+          class="back active"
+          href="/"
+        >
+          <svg
+            class="w-6 h-6 leftchev"
+            fill="none"
+            stroke="currentColor"
+            stroke-width="1.5"
+            viewBox="0 0 24 24"
+            xmlns="http://www.w3.org/2000/svg"
+          >
+            <path
+              d="M15.75 19.5L8.25 12l7.5-7.5"
+              stroke-linecap="round"
+              stroke-linejoin="round"
+            />
+          </svg>
+        </a>
+        <h1
+          class="topper"
+        >
+          World Holidays
+        </h1>
+      </div>
+      <div
+        class="hero-section"
+      >
+        <img
+          alt="world"
+          class="header-photo"
+          src="globalphoto.png"
+        />
+        <div
+          class="All-holidays"
+        >
+          <h3>
+            <span
+              class="before-text"
+            >
+              Sampled
+            </span>
+            <br />
+             
+            <span
+              class="main-text"
+            >
+              2
+            </span>
+             
+            <span
+              class="after-text"
+            >
+              Countries
+            </span>
+          </h3>
+        </div>
+      </div>
+    </div>
+    <div
+      class="search-container"
+    >
+      <p
+        class="search-Title"
+      >
+        Search For Country
+      </p>
+      <input
+        class="search-Input-Area"
+        placeholder="e.g. Andorra"
+      />
+    </div>
+    <div
+      class="individual-countries"
+    >
+      <a
+        class="one-country"
+        href="/CountryDetails"
+        id="US"
+      >
+        <svg
+          class="w-6 h-6 righter"
+          fill="none"
+          stroke="currentColor"
+          stroke-width="1.2"
+          viewBox="0 0 24 24"
+          xmlns="http://www.w3.org/2000/svg"
+        >
+          <path
+            d="M12.75 15l3-3m0 0l-3-3m3 3h-7.5M21 12a9 9 0 11-18 0 9 9 0 0118 0z"
+            stroke-linecap="round"
+            stroke-linejoin="round"
+          />
+        </svg>
+        <div
+          class="initials"
+        >
+          US
+        </div>
+        <p
+          class="nav-to"
+        >
+          United States
+          <br />
+          <span
+            class="holidays-count"
+          >
+            2 + Holidays
+          </span>
+        </p>
+        <div
+          class="holiday-counter"
+        />
+      </a>
+      <a
+        class="one-country"
+        href="/CountryDetails"
+        id="CA"
+      >
+        <svg
+          class="w-6 h-6 righter"
+          fill="none"
+          stroke="currentColor"
+          stroke-width="1.2"
+          viewBox="0 0 24 24"
+          xmlns="http://www.w3.org/2000/svg"
+        >
+          <path
+            d="M12.75 15l3-3m0 0l-3-3m3 3h-7.5M21 12a9 9 0 11-18 0 9 9 0 0118 0z"
+            stroke-linecap="round"
+            stroke-linejoin="round"
+          />
+        </svg>
+        <div
+          class="initials"
+        >
+          CA
+        </div>
+        <p
+          class="nav-to"
+        >
+          Canada
+          <br />
+          <span
+            class="holidays-count"
+          >
+            2 + Holidays
+          </span>
+        </p>
+        <div
+          class="holiday-counter"
+        />
+      </a>
+    </div>
+  </div>
+</div>
+`;
+
+exports[`renders the loading state correctly 1`] = `
+<div>
+   
+  <div>
+    <div>
+      <div
+        class="nav-container"
+      >
+        <a
+          aria-current="page"
+          class="back active"
+          href="/"
+        >
+          <svg
+            class="w-6 h-6 leftchev"
+            fill="none"
+            stroke="currentColor"
+            stroke-width="1.5"
+            viewBox="0 0 24 24"
+            xmlns="http://www.w3.org/2000/svg"
+          >
+            <path
+              d="M15.75 19.5L8.25 12l7.5-7.5"
+              stroke-linecap="round"
+              stroke-linejoin="round"
+            />
+          </svg>
+        </a>
+        <h1
+          class="topper"
+        >
+          World Holidays
+        </h1>
+      </div>
+      <div
+        class="hero-section"
+      >
+        <img
+          alt="world"
+          class="header-photo"
+          src="globalphoto.png"
+        />
+        <div
+          class="All-holidays"
+        >
+          <h3>
+            <span
+              class="before-text"
+            >
+              Sampled
+            </span>
+            <br />
+             
+            <span
+              class="main-text"
+            >
+              0
+            </span>
+             
+            <span
+              class="after-text"
+            >
+              Countries
+            </span>
+          </h3>
+        </div>
+      </div>
+    </div>
+    <div
+      class="search-container"
+    >
+      <p
+        class="search-Title"
+      >
+        Search For Country
+      </p>
+      <input
+        class="search-Input-Area"
+        placeholder="e.g. Andorra"
+      />
+    </div>
+    <div
+      class="individual-countries"
+    />
+  </div>
+</div>
+`;
