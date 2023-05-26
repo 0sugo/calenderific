@@ -86,6 +86,7 @@ exports[`renders the Countries component correctly 1`] = `
     >
       <a
         class="one-country"
+        data-testid="filtered-holiday"
         href="/CountryDetails"
         id="US"
       >
@@ -125,6 +126,7 @@ exports[`renders the Countries component correctly 1`] = `
       </a>
       <a
         class="one-country"
+        data-testid="filtered-holiday"
         href="/CountryDetails"
         id="CA"
       >
