@@ -2,7 +2,7 @@ body {
   margin: 0;
   padding: 0;
   font-family: 'Lato', sans-serif;
-  background-color: #4269b2;
+  background-color: #5586e2;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
 }
@@ -20,7 +20,7 @@ code {
 /* Navbar */
 .nav-container {
   text-align: center;
-  background: #2d4573;
+  background: #4369b2;
   padding: 5px;
 }
 
@@ -54,7 +54,7 @@ code {
 
 .Banner {
   text-align: center;
-  background:#2d4573;
+  background: #35548c;
   color: #f0f5fe;
   padding: 10px;
 }
@@ -66,34 +66,16 @@ code {
 
 .before-text {
   color: #f0f5fe;
-  font-size: 30px;
   font-weight: 800;
+  font-size: 22px;
   text-transform: uppercase;
   line-height: 18px;
 }
 
 .after-text {
-  font-size: 20px;
+  font-size: 14px;
   text-transform: lowercase;
   font-weight: 300;
-}
-@media only screen and (max-width: 465px) {
-  .header-photo {
-    width: 50%;
-  }
-  
-  .before-text {
-    font-size: 22px;
-    text-transform: uppercase;
-    line-height: 18px;
-  }
-  
-  .after-text {
-    font-size: 14px;
-    text-transform: lowercase;
-    font-weight: 300;
-  }
-
 }
 
 /* countries */
@@ -102,18 +84,8 @@ code {
   grid-template-columns: repeat(3, 1fr);
 }
 
-@media only screen and (max-width: 900px) {
-  .header-photo {
-    width: 60%;
-  }
-  .individual-countries {
-    grid-template-columns: repeat(2, 1fr);
-  }
-}
-
 .one-country {
   aspect-ratio: 1/1;
-  background: #4167af;
   display: flex;
   flex-direction: column;
   justify-content: space-between;
@@ -123,7 +95,6 @@ code {
 
 .one-country:hover {
   box-shadow: 0 0 282px 10px rgba(0, 0, 0, 0.33) inset;
-
 }
 
 .initials {
@@ -143,6 +114,11 @@ code {
   text-transform: uppercase;
   text-decoration: none;
 }
+
+.one-country:nth-child(odd) {
+  background-color: #4268af;
+}
+
 
 /* search */
 .search-container {
@@ -198,9 +174,7 @@ code {
   color: #f0f5fe;
 }
 
-.one-country:nth-child(odd) {
-  background-color: #3e61a4;
-}
+
 
 /* CountryDetails */
 .chosen-holidays {
@@ -219,4 +193,30 @@ code {
 
 .dater {
   margin-right: 15%;
+}
+
+@media only screen and (max-width: 465px) {
+  .header-photo {
+    width: 50%;
+  }
+}
+
+@media only screen and (max-width: 900px) {
+  .header-photo {
+    width: 60%;
+  }
+
+  .individual-countries {
+    grid-template-columns: repeat(2, 1fr);
+  }
+
+  .one-country:nth-child(4n+1),
+  .one-country:nth-child(4n+4) {
+    background: #4268af;
+  }
+
+  .one-country:nth-child(4n+2),
+  .one-country:nth-child(4n+3) {
+    background: #3f62a6;
+  }
 }
