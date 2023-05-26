@@ -1,0 +1,106 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`renders the CountryDetails component correctly 1`] = `
+<div>
+   
+  <div>
+    <div
+      class="nav-container"
+    >
+      <a
+        aria-current="page"
+        class="back active"
+        href="/"
+      >
+        <svg
+          class="w-6 h-6 leftchev"
+          fill="none"
+          stroke="currentColor"
+          stroke-width="1.5"
+          viewBox="0 0 24 24"
+          xmlns="http://www.w3.org/2000/svg"
+        >
+          <path
+            d="M15.75 19.5L8.25 12l7.5-7.5"
+            stroke-linecap="round"
+            stroke-linejoin="round"
+          />
+        </svg>
+      </a>
+      <h1
+        class="topper"
+      >
+        World Holidays
+      </h1>
+    </div>
+    <div
+      class="hero-section"
+    >
+      <img
+        alt="world"
+        class="header-photo"
+        src="globalphoto.png"
+      />
+      <div
+        class="All-holidays"
+      >
+        <h3>
+          <span
+            class="before-text"
+          >
+            United States
+          </span>
+          <br />
+          <span
+            class="main-text"
+          >
+            2
+          </span>
+           
+          <span
+            class="after-text"
+          >
+            Holidays
+          </span>
+        </h3>
+      </div>
+    </div>
+    <div
+      class="chosen-container"
+    >
+      <h3
+        class="Banner"
+      >
+        HOLIDAYS IN
+         
+        UNITED STATES
+         - 2023
+      </h3>
+      <div
+        class="chosen-holidays"
+      >
+        <p>
+          United States
+        </p>
+        <p
+          class="dater"
+        >
+          2023-01-01
+        </p>
+      </div>
+      <div
+        class="chosen-holidays"
+      >
+        <p>
+          Independence Day
+        </p>
+        <p
+          class="dater"
+        >
+          2023-07-04
+        </p>
+      </div>
+    </div>
+  </div>
+</div>
+`;

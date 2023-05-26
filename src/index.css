@@ -1,13 +1,219 @@
 body {
   margin: 0;
-  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
-    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
-    sans-serif;
+  padding: 0;
+  font-family: 'Lato', sans-serif;
+  background-color: #5586e2;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
 }
 
 code {
-  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
+  font-family:
+    source-code-pro,
+    Menlo,
+    Monaco,
+    Consolas,
+    'Courier New',
     monospace;
+}
+
+/* Navbar */
+.nav-container {
+  text-align: center;
+  background: #4369b2;
+  padding: 5px;
+}
+
+.leftchev {
+  width: 50px;
+}
+
+.back {
+  text-decoration: none;
+  color: white;
+  position: fixed;
+  left: 10px;
+  top: 20px;
+}
+
+.topper {
+  font-weight: 400;
+  color: #f0f5fe;
+}
+
+.hero-section {
+  display: flex;
+  align-items: center;
+}
+
+/* global-photo */
+.header-photo {
+  width: 70%;
+  margin: 10px 15px;
+}
+
+.Banner {
+  text-align: center;
+  background: #35548c;
+  color: #f0f5fe;
+  padding: 10px;
+}
+
+.All-holidays {
+  color: #f0f5fe;
+  width: 50%;
+}
+
+.before-text {
+  color: #f0f5fe;
+  font-weight: 800;
+  font-size: 22px;
+  text-transform: uppercase;
+  line-height: 18px;
+}
+
+.after-text {
+  font-size: 14px;
+  text-transform: lowercase;
+  font-weight: 300;
+}
+
+/* countries */
+.individual-countries {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+}
+
+.one-country {
+  aspect-ratio: 1/1;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  padding-right: 15px;
+  text-decoration: none;
+}
+
+.one-country:hover {
+  box-shadow: 0 0 282px 10px rgba(0, 0, 0, 0.33) inset;
+}
+
+.initials {
+  align-self: center;
+  font-size: 10vw;
+  color: #2d4573;
+  margin: 0;
+  padding: 0;
+}
+
+.nav-to {
+  align-self: flex-end;
+  margin: 0;
+  padding: 0;
+  color: #f0f5fe;
+  font-size: 3vw;
+  text-transform: uppercase;
+  text-decoration: none;
+}
+
+.one-country:nth-child(odd) {
+  background-color: #4268af;
+}
+
+/* search */
+.search-container {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  background-color: #35548b;
+  padding-top: 15px;
+  padding-bottom: 20px;
+}
+
+.search-Title {
+  color: #f0f5fe;
+  text-transform: uppercase;
+  font-weight: 600;
+}
+
+.search-Input-Area {
+  width: 50%;
+  height: 35px;
+  padding-left: 15px;
+  border-radius: 8px;
+  -webkit-border-radius: 8px;
+  -moz-border-radius: 8px;
+  -ms-border-radius: 8px;
+  -o-border-radius: 8px;
+}
+
+.holiday-counter {
+  align-self: flex-end;
+  margin: 0;
+  padding: 0;
+  color: #f0f5fe;
+  font-size: 15px;
+}
+
+.holidays-count {
+  font-size: 15px;
+  margin: 0;
+  padding: 0;
+  text-align: right;
+  vertical-align: text-top;
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+}
+
+.righter {
+  width: 50px;
+  align-self: flex-end;
+  color: #f0f5fe;
+}
+
+/* CountryDetails */
+.chosen-holidays {
+  display: flex;
+  color: #f0f5fe;
+  justify-content: space-between;
+  font-size: 25px;
+  font-weight: 500;
+  padding: 25px;
+}
+
+.chosen-holidays:nth-child(odd) {
+  background: #2d4573;
+  padding: 25px;
+}
+
+.dater {
+  margin-right: 15%;
+}
+
+@media only screen and (max-width: 465px) {
+  .header-photo {
+    width: 50%;
+  }
+}
+
+@media only screen and (max-width: 900px) {
+  .header-photo {
+    width: 60%;
+  }
+
+  .individual-countries {
+    grid-template-columns: repeat(2, 1fr);
+  }
+
+  .one-country:nth-child(4n+1),
+  .one-country:nth-child(4n+4) {
+    background: #4268af;
+  }
+
+  .one-country:nth-child(4n+2),
+  .one-country:nth-child(4n+3) {
+    background: #3f62a6;
+  }
 }
