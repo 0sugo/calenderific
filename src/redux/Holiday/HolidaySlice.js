@@ -29,7 +29,6 @@ const HolidaySlice = createSlice({
       .addCase(HolidayFetcher.fulfilled, (state, action) => {
         state.isLoading = false;
         state.AllHolidays = action.payload;
-        // console.log(action.payload);
       })
       .addCase(HolidayFetcher.rejected, (state) => {
         state.isLoading = false;
