@@ -50,7 +50,7 @@ const Countries = () => {
         : (
           <div className="individual-countries">
             {filteredHoliday.map((Holiday) => (
-              <NavLink key={Holiday.countryCode} className="one-country" to="/CountryDetails" id={Holiday.countryCode} onClick={() => handleDetailsFetch(Holiday.countryCode)}>
+              <NavLink key={Holiday.countryCode} className="one-country" to="/CountryDetails" id={Holiday.countryCode} onClick={() => handleDetailsFetch(Holiday.countryCode)} data-testid="filtered-holiday">
                 <RightIcon />
                 <div className="initials">{Holiday.countryCode}</div>
                 <p className="nav-to">
