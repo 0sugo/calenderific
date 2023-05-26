@@ -13,7 +13,6 @@ const Countries = () => {
   const handleDetailsFetch = (selectedId) => {
     if (selectedId) {
       const url = `https://date.nager.at/api/v3/publicholidays/2023/${selectedId}`;
-      console.log(url);
       dispatch(fetchCountryDetails({ url }));
     }
   };
