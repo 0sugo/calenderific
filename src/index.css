@@ -119,7 +119,6 @@ code {
   background-color: #4268af;
 }
 
-
 /* search */
 .search-container {
   width: 100%;
@@ -173,8 +172,6 @@ code {
   align-self: flex-end;
   color: #f0f5fe;
 }
-
-
 
 /* CountryDetails */
 .chosen-holidays {
