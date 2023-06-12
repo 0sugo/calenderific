@@ -56,7 +56,6 @@
 ### Key Features <a name="key-features"></a>
 ### Key Features <a name="key-features"></a>
 ### Key Features <a name="key-features"></a>
-### Key Features <a name="key-features"></a>
 
 
 - **[List_feature]** - View a list of countries with their respective holidays
