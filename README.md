@@ -47,7 +47,6 @@
     <li><a href="https://create-react-app.dev">React</a></li>
     <li><a href="https://redux.js.org/">Redux</a></li>
     <li><a href="https://axios-http.com/">Axios</a></li>    
-    <li><a href="https://axios-http.com/">Axios</a></li>    
   </ul>
 </details>
 
